@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Tic-tac-toe by Turki Almalki</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <form id = "form-container" onsubmit="return false">
+    
+    <div id="players-container">
+      
+      <div id = "p1-container">
+        <p>X</p>
+        <input type="text" name="player" id = "player-one" placeholder="Name" value = "Player 1">
+      </div>
+      
+      <div id ="p2-container">
+        <p>O</p>
+        <input type="text" name="player" id = "player-two" placeholder="Name" value = "Player 2">
+      </div>
+    
+    </div>
+
+
+      <input type="submit" value="Play!" id = "submitBtn" onclick = "createPlayers()">
+
+  </form>
+  <div id = "game-board"></div>
+  <div id = "win-overlay" onclick="replay()">
+    <div id = "win-text"></div>
+  </div>
+  <script src="javascripts.js"></script>
+</body>
+<footer class="clearX">
+        <p class="message">Created with &hearts; by <span class="name">Turki</span></p>
+      </footer>
+</html>
